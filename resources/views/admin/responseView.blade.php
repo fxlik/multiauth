@@ -15,12 +15,21 @@
 	<div class="col-md-12">
 		<br>
 	</div>
+
+	
 	<div class="col-md-12">
 		 <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Id Respon:</strong>
                 {{ $respon->id }}
             </div>
+        </div>
+
+        <div class="col-md-12">
+        	<div class="form-group">
+        		<strong>Skor: </strong>
+        		{{$hitungs * 2}}
+        	</div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
