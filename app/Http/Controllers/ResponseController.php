@@ -58,12 +58,14 @@ class ResponseController extends Controller
         ->join('questions', 'answers.question_id','=','questions.id')
         ->where('response_id','=',$id)
         ->get();
+        //hitung jawaban sudah
         $hitungs = DB::table('answers')
         ->join('responses', 'answers.response_id','=','responses.id')
         ->join('questions', 'answers.question_id','=','questions.id')
         ->where('response_id','=',$id)
         ->Where('value','=','sudah') 
         ->count();
+        //hitung jawaban belum
         $hitungb = DB::table('answers')
         ->join('responses', 'answers.response_id','=','responses.id')
         ->join('questions', 'answers.question_id','=','questions.id')
