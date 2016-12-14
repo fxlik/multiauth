@@ -29,7 +29,7 @@
         <link rel="stylesheet" href="{{ url('adminpanel/css') }}/style.css"/>
         <link rel="stylesheet" href="{{ url('adminpanel/css') }}/theme-1.css"/>
         <link rel="stylesheet" href="{{ url('adminpanel/css') }}/toastr.min.css"/>
-        <link rel="stylesheet" href="{{ url('adminpanel/css') }}/font-awesome.min.css"/>
+        <!-- <link rel="stylesheet" href="{{ url('adminpanel/css') }}/font-awesome.css"/> -->
         <!-- <link rel="stylesheet" href="{{ url('adminpanel/jquery-ui') }}/jquery-ui.min.css"/> -->
         
 
