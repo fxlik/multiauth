@@ -28,6 +28,7 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['web']], function () {
 	Route::auth();
+	Route::get('user/activation/{token}', 'Auth\AuthController@activateUser')->name('user.activate');
     //Login Routes...
     Route::get('/admin2/login','AdminAuth\AuthController@showLoginForm');
     Route::post('/admin/login','AdminAuth\AuthController@login');
