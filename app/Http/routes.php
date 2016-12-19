@@ -31,7 +31,7 @@ Route::group(['middleware' => ['web']], function () {
     //Login Routes...
     Route::get('/admin2/login','AdminAuth\AuthController@showLoginForm');
     Route::post('/admin/login','AdminAuth\AuthController@login');
-    Route::get('/admin2/logout','AdminAuth\AuthController@logout');
+    Route::get('/admin/logout','AdminAuth\AuthController@logout');
 
 //     // Registration Routes...
 //     Route::get('admin2/register', 'AdminAuth\AuthController@showRegistrationForm');
@@ -62,6 +62,9 @@ Route::get('surveys/{id}/done', 'SurveyController@getSurveyDone');
 
 //buat response
 Route::resource('admin/respon', 'ResponseController');
+
+//buat daerah
+Route::resource('admin/daerah', 'DaerahController');
 
 
 

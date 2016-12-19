@@ -119,6 +119,14 @@
                     Kuesioner
                     </a>
                 </li>
+
+                 <li>
+                    <a href="{{ url('admin/daerah') }}">
+                    <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                    Daerah
+                    </a>
+                </li>
+
                 <li>
                     <a href="{{url('admin/respon')}}" >
                     <span class="glyphicon glyphicon-retweet" aria-hidden="true"></span>

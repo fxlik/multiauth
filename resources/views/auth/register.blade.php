@@ -11,7 +11,7 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label class="col-md-4 control-label">Name</label>
+                            <label class="col-md-4 control-label">Nama</label>
 
                             <div class="col-md-6">
                                 <input type="text" class="form-control" name="name" value="{{ old('name') }}">
@@ -33,6 +33,36 @@
                                 @if ($errors->has('email'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <!-- buat daerah -->
+                        <div class="form-group{{ $errors->has('daerah') ? ' has-error' : '' }}">
+                            <label class="col-md-4 control-label">Asal Daerah</label>
+
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="daerah" value="{{ old('daerah') }}">
+
+                                @if ($errors->has('daerah'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('daerah') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <!-- buat jabatan -->
+                        <div class="form-group{{ $errors->has('jabatan') ? ' has-error' : '' }}">
+                            <label class="col-md-4 control-label">Jabatan</label>
+
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="jabatan" value="{{ old('jabatan') }}">
+
+                                @if ($errors->has('jabatan'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('jabatan') }}</strong>
                                     </span>
                                 @endif
                             </div>

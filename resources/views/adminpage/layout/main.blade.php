@@ -14,11 +14,11 @@
 
         <!-- style for css -->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,400' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{{ url('adminpanel/css') }}/dataTables.bootstrap.css"/>
         <link rel="stylesheet" href="{{ url('adminpanel/css') }}/bootstrap.min.css"/>
         <link rel="stylesheet" href="{{ url('adminpanel/css') }}/style.css"/>
         <link rel="stylesheet" href="{{ url('adminpanel/css') }}/theme-1.css"/>
         <link rel="stylesheet" href="{{ url('adminpanel/css') }}/toastr.min.css"/>
+        <link rel="stylesheet" href="{{ url('adminpanel/css') }}/dataTables.bootstrap.css"/>
         <!-- <link rel="stylesheet" href="{{ url('adminpanel/jquery-ui') }}/jquery-ui.min.css"/> -->
         
 
@@ -164,7 +164,7 @@
   </nav>
 
   <div>
-    <div class="container-fluid" ui-view>
+    <div class="container-fluid">
       @yield('content')
     </div>
   </div>
